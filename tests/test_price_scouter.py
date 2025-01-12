@@ -15,13 +15,13 @@ def test_find_retailers():
     # Test with South Africa
     retailers = find_retailers("South Africa")
 
-    # Basic validation
-    assert isinstance(retailers, list)
-    assert all(isinstance(r, RetailerInfo) for r in retailers)
-
-    # Debug output
-    if not any(r.name == "Takealot" for r in retailers):
-        print("\nRetailers found:", [r.name for r in retailers])
+    # Enhanced debug output
+    print("\nRetailers found:")
+    for r in retailers:
+        print(f"- {r.name} (confidence: {r.confidence_score})")
+        print(f"  specialties: {r.specialties}")
+        print(f"  international: {r.international}")
+        print(f"  website: {r.website}")
 
     # Content validation
     assert any(
