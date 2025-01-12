@@ -1,3 +1,9 @@
+# src/pricescoutai/__init__.py
+from .models import RetailerInfo
+from .retailers import find_retailers
+
+__all__ = ["RetailerInfo", "find_retailers", "find_best_prices"]
+
 
 def find_best_prices(query: str):
     """

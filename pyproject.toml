@@ -21,6 +21,8 @@ managed = true
 dev-dependencies = [
     "pytest>=8.3.4",
     "pytest-cov>=6.0.0",
+    "isort>=5.13.2",
+    "black>=24.10.0",
 ]
 
 [tool.hatch.metadata]
