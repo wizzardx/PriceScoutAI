@@ -1,5 +1,38 @@
 # PriceScoutAI TODOs
 
+## Immediate TODOs
+
+### Testing Infrastructure
+- [ ] Set up mock responses for CI environment
+  - [ ] Create fixture data for retailer responses
+  - [ ] Add environment detection for CI vs local
+  - [ ] Document how to add API keys for local development
+- [ ] Make tests more robust
+  - [ ] Add retry logic for flaky AI responses
+  - [ ] Expand acceptable retailers list in tests
+  - [ ] Add explicit test for Temu presence
+  - [ ] Add test timing metrics
+
+### API Design Improvements
+- [ ] Make retailer specialization optional
+  - [ ] Add parameter for product category focus
+  - [ ] Update tests to verify general retail capability
+  - [ ] Document retailer categorization strategy
+- [ ] Add result consistency checks
+  - [ ] Verify key retailers always appear
+  - [ ] Add confidence scores to results
+  - [ ] Log unexpected omissions
+
+### Documentation
+- [ ] Add development setup guide
+  - [ ] API key configuration
+  - [ ] Testing environment setup
+  - [ ] Mock data usage
+- [ ] Document test strategy
+  - [ ] When to use mocks vs live API
+  - [ ] Handling test flakiness
+  - [ ] CI considerations
+
 ## Core Components
 
 ### 1. AI Query System
