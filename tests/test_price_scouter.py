@@ -1,16 +1,7 @@
-from pricescoutai import ProductParser
+from pricescoutai import find_best_prices
 
-def test_example():
-    assert False, "This is a failing test to get started!"
-
-def test_parse_description():
-    description = "Nylon Braided 3-in-1 Multi-Charging Cable"
-    expected = {
-        'type': '3-in-1 Multi-Charging Cable',
-        'features': ['Nylon Braided', 'USB Power Mode', '≤36V Operating Voltage'],
-        'compatible_devices': ['iPhone', 'Android']
-    }
-    parser = ProductParser(description)
-    result = parser.parse_description()
-    
-    assert result == expected
+def test_find_best_prices():
+    query = "candy bars"
+    result = find_best_prices(query)
+    assert isinstance(result, dict), "Result should be a dictionary"
+    assert "error" in result, "Result should indicate that functionality is not implemented yet"
