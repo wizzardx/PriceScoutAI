@@ -2,6 +2,18 @@
 
 ## Immediate TODOs
 
+### Code Organization
+- [ ] Move non-test code from tests/ to src/
+  - [ ] Move RetailerInfo to src/pricescoutai/models.py
+  - [ ] Move find_retailers to src/pricescoutai/retailers.py
+  - [ ] Update imports in tests
+  - [ ] Add __init__.py exports
+- [ ] Proper TDD workflow
+  - [ ] Write separate failing test for Temu presence
+  - [ ] Add test for retailer specialization before implementing
+  - [ ] Document TDD process in README.md
+  - [ ] Add commit guidelines to enforce TDD
+
 ### Testing Infrastructure
 - [ ] Set up mock responses for CI environment
   - [ ] Create fixture data for retailer responses
