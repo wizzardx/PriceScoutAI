@@ -14,6 +14,30 @@
   - [ ] Document TDD process in README.md
   - [ ] Add commit guidelines to enforce TDD
 
+### AI Reliability Improvements
+- [ ] Implement retailer result caching
+  - [ ] Store successful retailer lookups
+  - [ ] Build up reliable retailer database over time
+  - [ ] Use cached results as seed data for searches
+- [ ] Improve search consistency
+  - [ ] Add debug logging for retailer search results
+  - [ ] Track which retailers are commonly missed
+  - [ ] Add retry logic with different search strategies
+- [ ] Model interaction improvements
+  - [ ] Test different prompting strategies
+  - [ ] Compare performance across different models
+  - [ ] Add fallback options for when primary search fails
+
+### Debugging Support
+- [ ] Add detailed logging for AI responses
+  - [ ] Log raw model outputs
+  - [ ] Track which retailers appear/don't appear
+  - [ ] Monitor confidence scores
+- [ ] Test result analysis
+  - [ ] Add test output inspection tools
+  - [ ] Track flaky test patterns
+  - [ ] Generate test result reports
+
 ### Testing Infrastructure
 - [ ] Set up mock responses for CI environment
   - [ ] Create fixture data for retailer responses
