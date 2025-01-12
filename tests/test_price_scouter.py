@@ -19,6 +19,10 @@ def test_find_retailers():
     assert isinstance(retailers, list)
     assert all(isinstance(r, RetailerInfo) for r in retailers)
 
+    # Debug output
+    if not any(r.name == "Takealot" for r in retailers):
+        print("\nRetailers found:", [r.name for r in retailers])
+
     # Content validation
     assert any(
         r.name == "Takealot" for r in retailers
