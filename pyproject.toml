@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">= 3.8"
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "setuptools>=61.0.0"]
 build-backend = "hatchling.build"
 
 [tool.rye]
@@ -25,3 +25,7 @@ allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pricescoutai"]
+
+[tool.hatch.build]
+artifacts = []
+force-include = []
