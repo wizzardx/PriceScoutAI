@@ -20,11 +20,11 @@
   - [ ] Build up reliable retailer database over time
   - [ ] Use cached results as seed data for searches
 - [ ] Improve search consistency
-  - [ ] Add debug logging for retailer search results
-  - [ ] Track which retailers are commonly missed
+  - [x] Add debug logging for retailer search results
+  - [x] Track which retailers are commonly missed
   - [ ] Add retry logic with different search strategies
 - [ ] Model interaction improvements
-  - [ ] Test different prompting strategies
+  - [x] Test different prompting strategies
   - [ ] Compare performance across different models
   - [ ] Add fallback options for when primary search fails
 
