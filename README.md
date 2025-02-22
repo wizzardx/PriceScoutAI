@@ -1,53 +1,92 @@
-# PriceScoutAI
+# 🏷️ PriceScoutAI: AI-Powered Price Comparison Tool
 
-**PriceScoutAI** is an AI-powered price scout designed to help you find the lowest cost for a given product. By scraping various retailers, including lesser-known platforms, and comparing prices across different currencies, PriceScoutAI gives you a comprehensive view of the best deals available online.
+🚀 **Find the Best Deals Across Online Retailers in Real-Time!**
 
-## Features
+## 📌 Overview
+PriceScoutAI is an **AI-powered price comparison tool** that scrapes product prices across multiple retailers, compares them across currencies, and returns the lowest available price. This is perfect for **finding the best deals**, monitoring price trends, and optimizing purchases.
 
-- **AI-Powered Price Comparison**: Leveraging AI to intelligently search and find the best prices across multiple online retailers.
-- **Multi-Currency Support**: Prices are converted to your local currency for easy comparison.
-- **Web Scraping**: Gathers real-time data from various e-commerce platforms, including international and niche stores.
-- **TDD-Driven Development**: The project follows a "Test-Driven Development" (TDD) methodology in the style of *Obey the Testing Goat* for robust, maintainable code.
+🔹 **AI-Powered Price Matching** - Finds and compares product prices in real-time.  
+🔹 **Multi-Retailer & Multi-Currency Support** - Pulls data from different platforms and converts prices.  
+🔹 **Web Scraping for Up-to-Date Pricing** - Retrieves fresh prices from top e-commerce sites.  
+🔹 **TDD-Driven Development** - Built using test-driven development for reliability.
 
-## Installation
+---
 
-### Prerequisites
+## 📊 Example Use Case
+**Scenario:** You’re looking for the best price on a **MacBook Pro**. Instead of manually checking 5+ websites, PriceScoutAI does it for you:
 
-Ensure that you have Python 3.8+ and [Rye](https://rye-up.com/) installed on your system.
+```python
+from pricescoutai import find_best_prices
 
-### Steps to Install
+query = "MacBook Pro 14-inch M3"
+best_prices = find_best_prices(query)
+print(best_prices)
+```
 
-1. Clone the repository:
+✅ **Expected Output:**
+```json
+{
+  "Amazon": "$1,899",
+  "BestBuy": "$1,849",
+  "Walmart": "$1,879",
+  "Newegg": "$1,869",
+  "Cheapest": "BestBuy ($1,849)"
+}
+```
 
-   ```bash
-   git clone https://github.com/wizzardx/PriceScoutAI.git
-   cd PriceScoutAI
-   ```
+---
 
-2. Install dependencies using Rye:
+## 🛠 Installation
+### **🔹 Prerequisites**
+Ensure you have **Python 3.8+** and `pip` installed.
 
-   ```bash
-   rye sync
-   ```
+### **🔹 Install Dependencies**
+```bash
+git clone https://github.com/wizzardx/PriceScoutAI.git
+cd PriceScoutAI
+pip install -r requirements.txt
+```
 
-3. To run tests:
+### **🔹 Run a Price Query**
+```bash
+python -m pricescoutai "PlayStation 5"
+```
 
-   ```bash
-   rye run python -m pytest
-   ```
+---
 
-## Development
+## 🏆 Features & Roadmap
+### ✅ **Current Features**
+- AI-powered **retailer identification**
+- Web scraping for **real-time price updates**
+- Multi-currency **price conversion**
+- Integration with **top e-commerce platforms**
 
-This project follows a TDD approach. To contribute:
+### ⏳ **Planned Features**
+- **📊 Price Trend Analysis** - Track historical price changes over time.
+- **📡 API Access** - Monetizable API for developers & businesses.
+- **📥 Email Alerts** - Get notified when prices drop.
+- **📱 Mobile App Integration** - Future roadmap includes an iOS/Android app.
 
-1. Write a test that fails for the new feature or bug fix.
-2. Implement the feature or fix, and ensure the test passes.
-3. Commit the changes and push them to the repository.
+---
 
-## License
+## 👥 Contributing
+We welcome contributions! To contribute:
+1. Fork the repo
+2. Create a feature branch (`git checkout -b new-feature`)
+3. Commit your changes (`git commit -m "Add feature"`)
+4. Push to GitHub (`git push origin new-feature`)
+5. Submit a PR
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
 
-## Contact
+## 📜 License
+This project is licensed under the MIT License. See the **LICENSE** file for details.
 
-For more information, contact me at [wizzardx@gmail.com](mailto:wizzardx@gmail.com).
+---
+
+## 📬 Contact
+🔹 **GitHub:** [wizzardx](https://github.com/wizzardx)  
+🔹 **Website:** [davidpurdy.ar-ciel.org](https://davidpurdy.ar-ciel.org)  
+🔹 **Email:** [wizzardx@gmail.com](mailto:wizzardx@gmail.com)
+
+🚀 **Let’s revolutionize AI-powered shopping together!**
