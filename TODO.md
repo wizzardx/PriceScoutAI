@@ -1,146 +1,118 @@
-# PriceScoutAI TODOs
+# 🏷️ PriceScoutAI TODOs
 
-## Immediate TODOs
+## 🚀 Immediate Priorities
 
-### Code Organization
-- [ ] Move non-test code from tests/ to src/
-  - [ ] Move RetailerInfo to src/pricescoutai/models.py
-  - [ ] Move find_retailers to src/pricescoutai/retailers.py
-  - [ ] Update imports in tests
-  - [ ] Add __init__.py exports
-- [ ] Proper TDD workflow
-  - [ ] Write separate failing test for Temu presence
-  - [ ] Add test for retailer specialization before implementing
-  - [ ] Document TDD process in README.md
-  - [ ] Add commit guidelines to enforce TDD
+### 🔹 **Code Organization & Cleanup**
+- [ ] Move non-test code from `tests/` to `src/`
+  - [ ] Relocate `RetailerInfo` to `src/pricescoutai/models.py`
+  - [ ] Relocate `find_retailers` to `src/pricescoutai/retailers.py`
+  - [ ] Update import paths in tests
+  - [ ] Add `__init__.py` exports for modular imports
 
-### AI Reliability Improvements
+### 🔹 **AI Reliability Improvements**
 - [ ] Implement retailer result caching
   - [ ] Store successful retailer lookups
-  - [ ] Build up reliable retailer database over time
+  - [ ] Build up a reliable retailer database over time
   - [ ] Use cached results as seed data for searches
 - [ ] Improve search consistency
   - [x] Add debug logging for retailer search results
   - [x] Track which retailers are commonly missed
-  - [ ] Add retry logic with different search strategies
-- [ ] Model interaction improvements
+  - [ ] Implement retry logic with different search strategies
+- [ ] Model interaction enhancements
   - [x] Test different prompting strategies
-  - [ ] Compare performance across different models
-  - [ ] Add fallback options for when primary search fails
+  - [ ] Compare performance across different AI models
+  - [ ] Add fallback mechanisms for failed searches
 
-### Debugging Support
-- [ ] Add detailed logging for AI responses
-  - [ ] Log raw model outputs
+### 🔹 **Testing & Debugging**
+- [ ] Implement detailed logging for AI responses
+  - [ ] Log raw AI model outputs
   - [ ] Track which retailers appear/don't appear
-  - [ ] Monitor confidence scores
-- [ ] Test result analysis
-  - [ ] Add test output inspection tools
-  - [ ] Track flaky test patterns
-  - [ ] Generate test result reports
+  - [ ] Monitor AI confidence scores
+- [ ] Enhance test infrastructure
+  - [ ] Add test result inspection tools
+  - [ ] Identify and track flaky test patterns
+  - [ ] Generate test reports
 
-### Testing Infrastructure
-- [ ] Set up mock responses for CI environment
-  - [ ] Create fixture data for retailer responses
-  - [ ] Add environment detection for CI vs local
-  - [ ] Document how to add API keys for local development
-- [ ] Make tests more robust
-  - [ ] Add retry logic for flaky AI responses
-  - [ ] Expand acceptable retailers list in tests
-  - [ ] Add explicit test for Temu presence
-  - [ ] Add test timing metrics
+---
 
-### API Design Improvements
-- [ ] Make retailer specialization optional
-  - [ ] Add parameter for product category focus
-  - [ ] Update tests to verify general retail capability
-  - [ ] Document retailer categorization strategy
-- [ ] Add result consistency checks
-  - [ ] Verify key retailers always appear
-  - [ ] Add confidence scores to results
-  - [ ] Log unexpected omissions
+## 🔥 Core Components
 
-### Documentation
-- [ ] Add development setup guide
-  - [ ] API key configuration
-  - [ ] Testing environment setup
-  - [ ] Mock data usage
-- [ ] Document test strategy
-  - [ ] When to use mocks vs live API
-  - [ ] Handling test flakiness
-  - [ ] CI considerations
-
-## Core Components
-
-### 1. AI Query System
-- [ ] Implement multi-step AI query pipeline
-  - [ ] Product description parsing/normalization
-  - [ ] Retailer identification
-  - [ ] Product matching validation
-  - [ ] Price reasonability checks
-- [ ] Handle context preservation between queries
+### 🧠 **1. AI Query System**
+- [ ] Implement a multi-step AI query pipeline
+  - [ ] Normalize product descriptions
+  - [ ] Enhance retailer identification
+  - [ ] Validate product matching
+  - [ ] Introduce price sanity checks
+- [ ] Improve query context preservation
 - [ ] Implement rate limiting and resource management
 - [ ] Add safeguards against AI hallucination
 
-### 2. Web Scraping Infrastructure
-- [ ] Set up ethical scraping framework
-  - [ ] robots.txt compliance
-  - [ ] Rate limiting
-  - [ ] User-agent management
-- [ ] Implement scrapers for major platforms
-  - [ ] Local SA retailers
-  - [ ] International platforms that ship to SA
+### 🌐 **2. Web Scraping Infrastructure**
+- [ ] Ensure ethical scraping compliance
+  - [ ] Respect `robots.txt` rules
+  - [ ] Implement rate limiting
+  - [ ] Manage user-agent headers
+- [ ] Expand supported platforms
+  - [ ] South African retailers
+  - [ ] International platforms with SA shipping
   - [ ] Marketplace aggregators
-- [ ] Add proxy rotation/management
+- [ ] Implement proxy rotation for reliability
 
-### 3. Price Analysis System
-- [ ] Currency conversion handling
-- [ ] Price validation logic
-  - [ ] Reasonable price range detection
-  - [ ] Outlier detection
-  - [ ] Historical price comparison
-- [ ] Total cost calculation (including shipping, taxes)
+### 💰 **3. Price Analysis System**
+- [ ] Handle currency conversion
+- [ ] Implement price validation logic
+  - [ ] Detect price anomalies
+  - [ ] Track historical price trends
+  - [ ] Detect outliers and inconsistencies
+- [ ] Calculate total cost, including shipping and taxes
 
-### 4. Discovery Strategy
-- [ ] Implement "anchor point" system using known reliable retailers
-- [ ] Add support for alternative product descriptions
-- [ ] Build retailer reliability scoring
-- [ ] Handle regional variations and shipping restrictions
+### 🔍 **4. Discovery & Search Optimization**
+- [ ] Develop an "anchor point" system with verified retailers
+- [ ] Implement alternative product description mapping
+- [ ] Introduce retailer reliability scoring
+- [ ] Handle regional availability and shipping restrictions
 
-### 5. Data Management
-- [ ] Design caching system for repeated queries
-- [ ] Implement result validation pipeline
-- [ ] Add error handling and recovery
-- [ ] Set up logging and monitoring
+### 🗄️ **5. Data Management & Performance**
+- [ ] Implement a caching mechanism for repeated queries
+- [ ] Introduce a validation pipeline for AI-generated results
+- [ ] Improve error handling and recovery processes
+- [ ] Set up real-time logging and monitoring
 
-## Development Priorities
+---
 
-1. First milestone: Basic infrastructure
-   - Single retailer scraping
-   - Simple price comparison
-   - Basic AI query handling
+## 🎯 Development Milestones
 
-2. Second milestone: Multi-source integration
-   - Multiple retailer support
-   - Currency conversion
-   - Basic validation
+### ✅ **Phase 1: Basic Infrastructure**
+- Single retailer scraping
+- Simple price comparison
+- Basic AI query handling
 
-3. Third milestone: Advanced features
-   - AI-powered discovery
-   - Price history tracking
-   - Reliability scoring
+### ✅ **Phase 2: Multi-Source Integration**
+- Support multiple retailers
+- Introduce currency conversion
+- Implement basic price validation
 
-## Testing Strategy
-
-- [ ] Unit tests for each component
-- [ ] Integration tests for AI interaction
-- [ ] Price validation test suite
-- [ ] Mock web responses for testing
-- [ ] Performance benchmarking
-
-## Future Enhancements
-
+### ✅ **Phase 3: Advanced Features**
+- AI-powered product discovery
 - Price history tracking
-- User preferences and alerts
-- Mobile app integration
-- API for third-party integration
-- Browser extension 
+- Retailer reliability scoring
+
+---
+
+## 📌 Testing Strategy
+- [ ] Unit tests for core components
+- [ ] Integration tests for AI interactions
+- [ ] Automated price validation tests
+- [ ] Simulated web responses for API testing
+- [ ] Performance benchmarking for large-scale queries
+
+---
+
+## 📈 Future Enhancements & Monetization
+- [ ] Price history visualization
+- [ ] User preferences & alerts
+- [ ] Mobile app integration
+- [ ] API access for third-party developers
+- [ ] Browser extension for instant price comparison
+
+🚀 **This document is regularly updated to align with ongoing development!**
