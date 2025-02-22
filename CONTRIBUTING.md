@@ -14,7 +14,7 @@ Thank you for considering contributing to **PriceScoutAI**, an AI-powered price 
 
 ### 🔹 **Step 2: Clone the Repo Locally**
 ```bash
-git clone https://github.com/YOUR-USERNAME/PriceScoutAI.git
+git clone https://github.com/wizzardx/PriceScoutAI.git
 cd PriceScoutAI
 ```
 
@@ -69,6 +69,9 @@ git push origin feature-branch-name
 - **📊 Price History Tracking** – Visual analytics.
 - **📱 Mobile App** – iOS/Android integration.
 
+### 🔗 **Technical Roadmap**
+For a detailed breakdown of ongoing tasks, see our [TODO.md](TODO.md).
+
 ---
 
 ## 🔥 Future Revenue Models (Monetization Strategy)
@@ -89,4 +92,3 @@ For any issues or feature requests, open a [GitHub Issue](https://github.com/wiz
 - **Email:** [wizzardx@gmail.com](mailto:wizzardx@gmail.com)
 
 🚀 **Join us in building the future of AI-powered price scouting!**
- 
