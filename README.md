@@ -1,7 +1,7 @@
 # 🏷️ PriceScoutAI: A Work-in-Progress AI-Powered Price Comparison Tool
 
-🚀 **🚧 This project is in early development.**  
-Currently focused on AI-driven retailer discovery & structured price validation.  
+🚀 **🚧 This project is in early development.**
+Currently focused on AI-driven retailer discovery & structured price validation.
 *Real-time price fetching & API integration are planned for future updates.*
 
 ---
@@ -9,9 +9,9 @@ Currently focused on AI-driven retailer discovery & structured price validation.
 ## 📌 Overview
 PriceScoutAI is an **AI-powered price comparison tool** that aims to scrape product prices across multiple retailers, compare them across currencies, and return the lowest available price. This will be useful for **finding the best deals**, monitoring price trends, and optimizing purchases.
 
-🔹 **AI-Powered Retailer Matching** *(Currently implemented)* - Identifies retailers based on search queries.  
-🔹 **Multi-Retailer & Multi-Currency Support** *(Planned)* - Will convert prices across platforms.  
-🔹 **Web Scraping for Real-Time Price Updates** *(Upcoming)* - Future versions will support live price retrieval.  
+🔹 **AI-Powered Retailer Matching** *(Currently implemented)* - Identifies retailers based on search queries.
+🔹 **Multi-Retailer & Multi-Currency Support** *(Planned)* - Will convert prices across platforms.
+🔹 **Web Scraping for Real-Time Price Updates** *(Upcoming)* - Future versions will support live price retrieval.
 🔹 **TDD-Driven Development** *(Ongoing)* - Test-driven approach for reliability.
 
 ---
@@ -108,8 +108,8 @@ This project is licensed under the MIT License. See the **LICENSE** file for det
 ---
 
 ## 📬 Contact
-🔹 **GitHub:** [wizzardx](https://github.com/wizzardx)  
-🔹 **Website:** [davidpurdy.ar-ciel.org](https://davidpurdy.ar-ciel.org)  
+🔹 **GitHub:** [wizzardx](https://github.com/wizzardx)
+🔹 **Website:** [davidpurdy.ar-ciel.org](https://davidpurdy.ar-ciel.org)
 🔹 **Email:** [wizzardx@gmail.com](mailto:wizzardx@gmail.com)
 
 🚀 **Join us in shaping the future of AI-powered shopping!**

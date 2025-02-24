@@ -1,7 +1,7 @@
 # 🏷️ PriceScoutAI TODOs
 
-🚀 **Work-in-Progress AI-Powered Price Scouting Tool**  
-📌 *This document is regularly updated to align with development progress.*  
+🚀 **Work-in-Progress AI-Powered Price Scouting Tool**
+📌 *This document is regularly updated to align with development progress.*
 
 ---
 
@@ -19,11 +19,11 @@
   - [ ] Store successful retailer lookups
   - [ ] Build a **reliable retailer database** over time
   - [ ] Use **cached results** as seed data for searches
-- [ ] Improve search consistency  
+- [ ] Improve search consistency
   - [ ] Add **debug logging** for retailer search results
   - [ ] Track which retailers are commonly missed
   - [ ] Implement **retry logic** with different search strategies
-- [ ] Model interaction enhancements  
+- [ ] Model interaction enhancement
   - [ ] Test **different prompting strategies**
   - [ ] Compare **performance across different AI models**
   - [ ] Add **fallback mechanisms** for failed searches
@@ -33,7 +33,7 @@
   - [ ] Log **raw AI model outputs**
   - [ ] Track which **retailers appear/don't appear**
   - [ ] Monitor AI **confidence scores**
-- [ ] Enhance test infrastructure  
+- [ ] Enhance test infrastructure
   - [ ] Add **test result inspection tools**
   - [ ] Identify and track **flaky test patterns**
   - [ ] Generate **test reports**
@@ -57,7 +57,7 @@
   - [ ] Respect `robots.txt` rules
   - [ ] Implement **rate limiting**
   - [ ] Manage **user-agent headers**
-- [ ] Expand supported platforms  
+- [ ] Expand supported platforms
   - [ ] **South African retailers** *(localized price scouting)*
   - [ ] **International platforms** with SA shipping
   - [ ] **Marketplace aggregators**

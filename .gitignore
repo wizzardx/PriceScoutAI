@@ -1,4 +1,7 @@
 # python generated files
+-old/
+-outputs/
+-run.sh_output.md
 __pycache__/
 *.py[oc]
 build/
@@ -9,3 +12,6 @@ wheels/
 # venv
 .venv
 repomix-output.txt
+.aider.*
+run.sh_output.md
+outputs/
